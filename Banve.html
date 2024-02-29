@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
+   <meta name ="description" content="Trang web Demo " />
+    <title>Trang bán vé xem phim </title>
+    <!--Open Grap-->
+    <meta property="og:title" content="Trang bán vé xem phim" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Trang web nhanh hàng đầu Việt Nam , đang được giảm giá với những ưu đãi chưa từng có "/>
+    <meta property="og:url" content="http://127.0.0.1:5500/html/Banve.html"/>
+    <meta property="og:image" content="../images/OIP.jpg"/>
+    <style >
+        input:valid {
+            border : 1px solid black ;
+        }
+        input:invalid {
+            border: 1px solid rgb(234, 14, 14);
+        }
+    </style>
+  </head>
+  <body>
+    <form method="post" enctype ="multipart/form-da  ta">
+      <caption>
+       <td> ĐĂNG KÝ HẠNG VÉ XEM PHIM </td>
+      </caption>
+      <table>
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" name="name"required minlength ="3" maxlength ="50" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="text" name="email" required/></td>
+        </tr>
+        <tr>
+          <td>Số điện thoại</td>
+          <td><input type="text" name="phone" pattern ="(\+84|0)[98953273]\d{9}" /></td>
+        </tr>
+        <tr>
+          <td>Số tài khoản ngân hàng</td>
+          <td><input type="number" name="stk" /></td>
+        </tr>
+        <tr>
+            <td>Độ tuổi </td>
+            <td>
+              
+                <select>
+                    <option value ="HSSV" >
+                        Học sinh sinh viên 
+
+                    </option>
+                    <option value ="Nguoitren18tuoi" selected>
+                        Nguời lớn 
+                    </option>
+                    <option value ="Nguoiduoi18tuoi"  >
+                        Nguời dưới 18 tuổi 
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mật khẩu 
+                <td><input type="password" name="matkhau" /></td>
+            </td>
+        </tr>
+        <tr>
+          <td>Hạng vé</td>
+          <td>
+            <input type="radio" name="hangVe" value="HangA" />A
+            <input type="radio" name="hangVe" value="HangB" />B
+            <input type="radio" name="hangVe" value="HangC" />C
+            <input type="radio" name="hangVe" value="HangD" />D
+            <input type="radio" name="hangVe" value="HangE" />E
+            <input type="radio" name="hangVe" value="HangF" />F
+          </td>
+        </tr>
+        <tr>
+            <td>Giới tính </td>
+            <td>
+                <input type ="radio" name="Gioitinh" value="nam" />Nam 
+                <input type ="radio" name="Gioitinh" value="nu" checked />Nữ  
+            </td>
+        </tr>
+        <tr>
+            <td>Đồ dùng thêm </td>
+            <td>
+                <input type ="checkbox" name ="dodungthem" value ="Doanvat" />Bắp rang
+                <input type ="checkbox" name ="dodungthem "value ="NuocNgot" />CocaCola
+                <input type ="checkbox" name ="dodungthem"value="Garan" />Gà rán
+            </td>
+        </tr>
+        <tr>
+            <td> Chứng minh thư hoặc ccmnd </td>
+            <td >
+                <input type ="file" name="hinh"/>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                Chú thích của khách hàng 
+            </td>
+            <td>
+                <textarea row ="5" cols="50">Bạn ghi chú ý tại đây</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan ="2"> 
+                <button type ="submit">Đăng ký 
+                </button>
+                <button type ="reset">Nhập lại </button>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
